@@ -1,0 +1,51 @@
+@import url(variables.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  background-color: #f5f5f5;
+  color: #5f5f5f;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1205px;
+  width: 100%;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+.text-body {
+  font-size: 1.4rem;
+  color: var(--color-1);
+}
+
+.text-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--azul-marino);
+}
+
+#btn-back-to-top {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: var(--azul-marino);
+  width: 40px;
+  height: 40px;
+}

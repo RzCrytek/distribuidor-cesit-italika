@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distribuidor y CESIT ITALIKA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/italika.css" />
+    <script type="module" src="/js/mapa.js"></script>
+  </head>
+  <body>
+    <main id="main-distributors-centers">
+      <section id="distributors-centers">
+        <div id="distributor-loader" style="display: none">
+          <img src="img/moto.png" alt="Imagen de moto" width="200px" />
+        </div>
+
+        <div class="wrapper">
+          <div class="top-titles">
+            <h2 class="text-body sub-title">
+              Encuentra ahora más fácil los centros de servicio ITALIKA y las ubicaciones ITALIKA más cerca de ti.
+            </h2>
+            <h1 class="text-title title">Distribuidor y CESIT ITALIKA</h1>
+          </div>
+
+          <div class="container-branches-map">
+            <div class="col content-search-engine">
+              <button id="open-modal-services" type="button" class="text-body sub-title">Nuestros servicios</button>
+              <h2 class="text-title title">Tiendas ITALIKA más cercanas</h2>
+
+              <div class="search-filter">
+                <div class="search-engine">
+                  <div class="content-select">
+                    <select id="select-services" class="select" name="services">
+                      <option value="" selected>Todos</option>
+                      <option value="1">CESIT</option>
+                      <option value="2">Distribuidores</option>
+                      <option value="3">Refacciones</option>
+                    </select>
+                  </div>
+                  <input
+                    id="input-autocomplete-search"
+                    class="input-search"
+                    type="text"
+                    placeholder="Ingresa una ciudad"
+                  />
+                  <button type="button" id="btn-icon-search" class="icon-search">
+                    <img src="/icons/search.svg" alt="Icono de buscar" />
+                  </button>
+                </div>
+
+                <div id="filter-buttons" class="filter-buttons" style="display: none">
+                  <button type="button" data-filter="cesit">CESIT</button>
+                  <button type="button" data-filter="refacciones">REFACCIONES</button>
+                  <button type="button" data-filter="distribuidores">DISTRIBUIDORES</button>
+                </div>
+              </div>
+
+              <div id="view-type" class="view-type" style="display: none">
+                <button class="btn-icon map active" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_294_747)">
+                      <path
+                        d="M19.4626 2.33168C20.2462 2.94608 20.7862 3.93848 21.007 4.97768C21.0338 4.98614 21.0598 4.99657 21.085 5.00888L23.539 6.14408C23.6762 6.20706 23.7925 6.30799 23.8741 6.43493C23.9558 6.56188 23.9994 6.70954 23.9998 6.86048V21.7009C23.9989 21.8242 23.9695 21.9456 23.9138 22.0555C23.8582 22.1655 23.7778 22.2611 23.679 22.3349C23.5801 22.4086 23.4656 22.4584 23.3443 22.4804C23.223 22.5024 23.0982 22.496 22.9798 22.4617L16.177 20.5417L8.08902 22.7713C7.94309 22.8114 7.78885 22.8097 7.64382 22.7665L0.568617 20.6605C0.405082 20.6124 0.261405 20.5129 0.158931 20.3767C0.0564581 20.2405 0.000656486 20.0749 -0.000183105 19.9045L-0.000183105 4.79768C-0.000183105 4.26968 0.513417 3.89048 1.02582 4.03928L7.86822 6.03248L11.3458 4.96808C11.3937 4.95395 11.4427 4.94391 11.4922 4.93808C11.6266 4.15088 12.0022 3.39488 12.6322 2.65808C13.3798 1.78208 14.6914 1.26848 15.9694 1.20728C17.2954 1.14368 18.3082 1.42688 19.4614 2.33048L19.4626 2.33168ZM1.59942 5.85728V19.3153L7.44342 21.0541V7.55768L1.59942 5.85728ZM11.4502 6.59408L9.04302 7.32968V20.8645L15.121 19.1917V15.2377C15.121 14.8009 15.4798 14.4469 15.9214 14.4469C16.363 14.4469 16.7206 14.8009 16.7206 15.2389V19.0513L22.4002 20.6533V7.36328L21.0562 6.73928C21.0334 6.87128 21.0046 7.00088 20.9686 7.12688C20.7077 8.04699 20.2699 8.90742 19.6798 9.66008L16.7074 13.3717C16.6292 13.4693 16.5292 13.5472 16.4155 13.5994C16.3018 13.6516 16.1775 13.6765 16.0525 13.6722C15.9275 13.6679 15.8052 13.6345 15.6953 13.5746C15.5855 13.5147 15.4912 13.43 15.4198 13.3273L12.6418 9.30368C12.1834 8.66288 11.8618 8.09168 11.6806 7.58048C11.5669 7.26142 11.4896 6.93051 11.4502 6.59408ZM16.0462 2.78888C15.175 2.83088 14.2798 3.18128 13.8538 3.67928C13.3414 4.27928 13.0894 4.84088 13.039 5.40968C12.979 6.09488 13.0198 6.57848 13.1902 7.05728C13.3162 7.41128 13.567 7.86008 13.9546 8.40128L16.1278 11.5477L18.4198 8.68568C18.8822 8.09474 19.225 7.41935 19.429 6.69728C19.717 5.68928 19.2826 4.20848 18.469 3.57248C17.635 2.91848 17.005 2.74208 16.0474 2.78888H16.0462ZM16.2118 3.62528C17.5366 3.62528 18.6118 4.68728 18.6118 5.99768C18.6101 6.31106 18.5466 6.62104 18.4251 6.90989C18.3035 7.19874 18.1262 7.46081 17.9033 7.68112C17.6805 7.90144 17.4164 8.07568 17.1261 8.19389C16.8359 8.31211 16.5252 8.37197 16.2118 8.37008C14.887 8.37008 13.8118 7.30808 13.8118 5.99768C13.8118 4.68728 14.887 3.62528 16.2118 3.62528ZM16.2118 5.20688C16.1073 5.20625 16.0038 5.2262 15.907 5.2656C15.8102 5.305 15.7222 5.36307 15.6478 5.43651C15.5735 5.50994 15.5144 5.59729 15.4738 5.69358C15.4332 5.78987 15.412 5.8932 15.4114 5.99768C15.4114 6.43448 15.7702 6.78848 16.2118 6.78848C16.3163 6.78895 16.4198 6.76884 16.5166 6.7293C16.6133 6.68975 16.7012 6.63154 16.7754 6.558C16.8497 6.48446 16.9087 6.39701 16.9491 6.30067C16.9895 6.20432 17.0105 6.10096 17.011 5.99648C17.0094 5.78589 16.9244 5.58452 16.7746 5.43651C16.6248 5.2885 16.4224 5.20592 16.2118 5.20688Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_294_747">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+
+                <button class="btn-icon list" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.4755 4H4.47552C4.21031 4 3.95595 4.10536 3.76842 4.29289C3.58088 4.48043 3.47552 4.73478 3.47552 5V19C3.47552 19.2652 3.58088 19.5196 3.76842 19.7071C3.95595 19.8946 4.21031 20 4.47552 20H20.4755C20.7407 20 20.9951 19.8946 21.1826 19.7071C21.3702 19.5196 21.4755 19.2652 21.4755 19V5C21.4755 4.73478 21.3702 4.48043 21.1826 4.29289C20.9951 4.10536 20.7407 4 20.4755 4ZM4.47552 2C3.67988 2 2.91681 2.31607 2.3542 2.87868C1.7916 3.44129 1.47552 4.20435 1.47552 5V19C1.47552 19.7956 1.7916 20.5587 2.3542 21.1213C2.91681 21.6839 3.67988 22 4.47552 22H20.4755C21.2712 22 22.0342 21.6839 22.5968 21.1213C23.1595 20.5587 23.4755 19.7956 23.4755 19V5C23.4755 4.20435 23.1595 3.44129 22.5968 2.87868C22.0342 2.31607 21.2712 2 20.4755 2H4.47552ZM6.47552 7H8.47552V9H6.47552V7ZM11.4755 7C11.2103 7 10.956 7.10536 10.7684 7.29289C10.5809 7.48043 10.4755 7.73478 10.4755 8C10.4755 8.26522 10.5809 8.51957 10.7684 8.70711C10.956 8.89464 11.2103 9 11.4755 9H17.4755C17.7407 9 17.9951 8.89464 18.1826 8.70711C18.3702 8.51957 18.4755 8.26522 18.4755 8C18.4755 7.73478 18.3702 7.48043 18.1826 7.29289C17.9951 7.10536 17.7407 7 17.4755 7H11.4755ZM8.47552 11H6.47552V13H8.47552V11ZM10.4755 12C10.4755 11.7348 10.5809 11.4804 10.7684 11.2929C10.956 11.1054 11.2103 11 11.4755 11H17.4755C17.7407 11 17.9951 11.1054 18.1826 11.2929C18.3702 11.4804 18.4755 11.7348 18.4755 12C18.4755 12.2652 18.3702 12.5196 18.1826 12.7071C17.9951 12.8946 17.7407 13 17.4755 13H11.4755C11.2103 13 10.956 12.8946 10.7684 12.7071C10.5809 12.5196 10.4755 12.2652 10.4755 12ZM8.47552 15H6.47552V17H8.47552V15ZM10.4755 16C10.4755 15.7348 10.5809 15.4804 10.7684 15.2929C10.956 15.1054 11.2103 15 11.4755 15H17.4755C17.7407 15 17.9951 15.1054 18.1826 15.2929C18.3702 15.4804 18.4755 15.7348 18.4755 16C18.4755 16.2652 18.3702 16.5196 18.1826 16.7071C17.9951 16.8946 17.7407 17 17.4755 17H11.4755C11.2103 17 10.956 16.8946 10.7684 16.7071C10.5809 16.5196 10.4755 16.2652 10.4755 16Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="content-map">
+                <div id="map-responsive" class="map-italika"></div>
+              </div>
+
+              <div class="result-content">
+                <div id="not-yet-searched" class="not-yet-searched" style="display: none">
+                  <picture>
+                    <img src="/img/img-girl-with-helmet.png" alt="Imagen chica con casco" />
+                  </picture>
+
+                  <p class="text-body note">
+                    Para encontrar más rápido la <strong>tienda de motos</strong> más cercana, compártenos tu ubicación.
+                  </p>
+                </div>
+
+                <div id="search-result" class="search-result" style="display: none"></div>
+              </div>
+            </div>
+
+            <div class="col content-map">
+              <div id="map" class="map-italika"></div>
+              <div id="infowindow-content"></div>
+            </div>
+          </div>
+
+          <div id="section-our-services" class="section-our-services">
+            <h2 class="our-services-title">Nuestro servicios</h2>
+
+            <div class="cards">
+              <div class="card distribuidores">
+                <div class="card-title">
+                  <img src="/icons/points/DISTRIBUIDORES.svg" alt="Ícono de Distribuidores" width="40" height="60" />
+                  <h2>Distribuidores ITALIKA</h2>
+                </div>
+
+                <p class="card-body">
+                  Con nuestros <strong>distribuidores ITALIKA</strong>, tenemos a la venta toda la gama de Italikas, las
+                  cuales puedes comprar a crédito o a contado. Además, contamos con personal especializado que te dará
+                  seguimiento y atención al momento de elegir tu <strong>moto ITALIKA</strong>.
+                </p>
+
+                <div class="card-image">
+                  <img
+                    class="card-image-img"
+                    src="/img/services/distribuidores.png"
+                    alt="Imagen de carro distribuidor"
+                  />
+                </div>
+              </div>
+
+              <div class="card refacciones">
+                <div class="card-title">
+                  <img src="/icons/points/REFACCIONES.svg" alt="Ícono de Refacciones" width="40" height="60" />
+                  <h2>Refacciones ITALIKA</h2>
+                </div>
+
+                <p class="card-body">
+                  Para garantizar también la eficiencia de tu motocicleta, te brindamos atención postventa al ofrecerte
+                  confianza para comprar todas las <strong>refacciones ITALIKA</strong> que necesites con un servicio de
+                  calidad.
+                </p>
+
+                <div class="card-image">
+                  <img class="card-image-img" src="/img/services/refacciones.png" alt="Imagen de refacciones" />
+                </div>
+              </div>
+
+              <div class="card cesits">
+                <div class="card-title">
+                  <img src="/icons/points/CESIT.svg" alt="Ícono de Cesits" width="40" height="60" />
+                  <h2>CESIT ITALIKA</h2>
+                </div>
+
+                <p class="card-body">
+                  Encuentra el <strong>Centro de Servicio ITALIKA (CESIT)</strong> más cercano, nuestros profesionales
+                  certificados te ayudarán a mantener en las mejores condiciones tu <strong>ITALIKA</strong> para que
+                  siga siendo el motor de tu vida. Ponemos a tu disposición nuestra amplia red con más de
+                  <strong>1,000 ITALIKA CESIT en México</strong>.
+                </p>
+
+                <div class="card-image">
+                  <img class="card-image-img" src="/img/services/cesits.png" alt="Imagen de Cesits" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="dialog-services" class="dialog dialog-services">
+      <button class="close-dialog-services dialog-close dialog-close-desktop" type="button">
+        <img class="img-close" src="/icons/close.svg" alt="Ícono de cerrar" />
+      </button>
+
+      <div class="dialog-content">
+        <div class="section-our-services">
+          <h2 class="our-services-title">Nuestro servicios</h2>
+
+          <div class="cards slider-services">
+            <div class="card distribuidores">
+              <button class="close-dialog-services dialog-close dialog-close-mobile" type="button">
+                <img class="img-close" src="/icons/close.svg" alt="Ícono de cerrar" />
+              </button>
+
+              <div class="card-title">
+                <img src="/icons/points/DISTRIBUIDORES.svg" alt="Ícono de Distribuidores" width="40" height="60" />
+                <h2>Distribuidores ITALIKA</h2>
+              </div>
+
+              <p class="card-body">
+                Con nuestros <strong>distribuidores ITALIKA</strong>, tenemos a la venta toda la gama de Italikas, las
+                cuales puedes comprar a crédito o a contado. Además, contamos con personal especializado que te dará
+                seguimiento y atención al momento de elegir tu <strong>moto ITALIKA</strong>.
+              </p>
+
+              <div class="card-image">
+                <img class="card-image-img" src="/img/services/distribuidores.png" alt="Imagen de carro distribuidor" />
+              </div>
+            </div>
+
+            <div class="card refacciones">
+              <button class="close-dialog-services dialog-close dialog-close-mobile" type="button">
+                <img class="img-close" src="/icons/close.svg" alt="Ícono de cerrar" />
+              </button>
+
+              <div class="card-title">
+                <img src="/icons/points/REFACCIONES.svg" alt="Ícono de Refacciones" width="40" height="60" />
+                <h2>Refacciones ITALIKA</h2>
+              </div>
+
+              <p class="card-body">
+                Para garantizar también la eficiencia de tu motocicleta, te brindamos atención postventa al ofrecerte
+                confianza para comprar todas las <strong>refacciones ITALIKA</strong> que necesites con un servicio de
+                calidad.
+              </p>
+
+              <div class="card-image">
+                <img class="card-image-img" src="/img/services/refacciones.png" alt="Imagen de refacciones" />
+              </div>
+            </div>
+
+            <div class="card cesits">
+              <button class="close-dialog-services dialog-close dialog-close-mobile" type="button">
+                <img class="img-close" src="/icons/close.svg" alt="Ícono de cerrar" />
+              </button>
+
+              <div class="card-title">
+                <img src="/icons/points/CESIT.svg" alt="Ícono de Cesits" width="40" height="60" />
+                <h2>CESIT ITALIKA</h2>
+              </div>
+
+              <p class="card-body">
+                Encuentra el <strong>Centro de Servicio ITALIKA (CESIT)</strong> más cercano, nuestros profesionales
+                certificados te ayudarán a mantener en las mejores condiciones tu <strong>ITALIKA</strong> para que siga
+                siendo el motor de tu vida. Ponemos a tu disposición nuestra amplia red con más de
+                <strong>1,000 ITALIKA CESIT en México</strong>.
+              </p>
+
+              <div class="card-image">
+                <img class="card-image-img" src="/img/services/cesits.png" alt="Imagen de Cesits" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-error-modal" class="dialog dialog-error">
+      <button type="button" class="dialog-error-close dialog-close">
+        <img class="img-close" src="/icons/close.svg" alt="Ícono de cerrar" />
+      </button>
+
+      <div class="error-content">
+        <h2 class="dialog-error-title">Error en servicio de geolocalización</h2>
+
+        <p class="dialog-error-description">
+          Ocurrió un error al tratar de obtener tu ubicación. Valida que la ubicación de tu dispositivo este activa.
+        </p>
+
+        <button type="button" class="dialog-error-close dialog-error-button">Aceptar</button>
+      </div>
+    </dialog>
+
+    <button id="btn-back-to-top" type="button">
+      <img src="/icons/top-arrow.svg" alt="Ícono de flecha hacia arriba" />
+    </button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAENf5t01hA1DZ0HPRJimAi-vzLglL0inc&libraries=places&callback=initMap"
+      defer
+    ></script>
+    <script type="module" src="/js/italika.js"></script>
+  </body>
+</html>
